@@ -24,6 +24,13 @@ class Expense {
     @ManyToOne(targetEntity = ExpenseType.class)
     ExpenseType expenseType
 
+    BigDecimal amount
+    Boolean isReceipt = false
+    String description
+
+    Date dateCreated = new Date()
+    Date purchaseDate
+
 
 
 }
